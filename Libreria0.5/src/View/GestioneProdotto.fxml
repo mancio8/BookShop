@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.GestioneProdottoControl">
+    <children>
+        <ImageView fx:id="screen" fitHeight="614.0" fitWidth="772.0" layoutX="-4.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle fx:id="blu13" arcHeight="5.0" arcWidth="5.0" fill="#86b8e4" height="139.0" layoutX="396.0" layoutY="391.0" stroke="#ff0e0e" strokeType="INSIDE" width="269.0" />
+        <Rectangle fx:id="blu6" arcHeight="5.0" arcWidth="5.0" fill="#86b8e4" height="37.0" layoutX="171.0" layoutY="321.0" stroke="#ff0e0e" strokeType="INSIDE" width="412.0" />
+
+        <Label fx:id="LIDL" layoutX="27.0" layoutY="55.0" text="ID Prodotto" textFill="WHITE" />
+        <Label fx:id="T" layoutX="20.0" layoutY="169.0" text="Titolo" textFill="WHITE" />
+        <Label fx:id="A" layoutX="20.0" layoutY="206.0" text="Autore" textFill="WHITE" />
+        <Label fx:id="CE" layoutX="14.0" layoutY="93.0" text="Case Editrice" textFill="WHITE" />
+        <Label fx:id="CISBN" layoutX="14.0" layoutY="135.0" text="Codice ISBN" textFill="WHITE" />
+        <Label fx:id="LGP" layoutX="249.0" prefHeight="50.0" prefWidth="228.0" text="Gestione Prodotto" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="TIpo" layoutX="467.0" layoutY="140.0" text="Tipo Articolo" textFill="WHITE" />
+        <Label fx:id="IDPAc" layoutX="478.0" layoutY="91.0" text="ID Prodotto" textFill="WHITE" />
+        <TextField fx:id="TFCISBN" layoutX="113.0" layoutY="130.0" />
+        <TextField fx:id="TFIDL" layoutX="109.0" layoutY="50.0"  />
+        <TextField fx:id="TFAutore" layoutX="111.0" layoutY="201.0" onKeyPressed="#AlphabeticA" />
+        <TextField fx:id="TFTitolo" layoutX="111.0" layoutY="165.0" />
+        <TextField fx:id="TFCasaE" layoutX="113.0" layoutY="89.0" />
+        <TextField fx:id="TFIDAc" layoutX="563.0" layoutY="86.0" />
+        <TextField fx:id="TFTipo" layoutX="563.0" layoutY="135.0" />
+        <Button fx:id="BLibro" layoutX="141.0" layoutY="256.0" mnemonicParsing="false" onAction="#AddLibro" text="Aggiungi Libro" />
+        <Button fx:id="BArtC" layoutX="601.0" layoutY="194.0" mnemonicParsing="false" onAction="#AddArticoloC" text="Aggiungi Articolo" />
+        <TextField fx:id="TFPrezzoUp" layoutX="490.0" layoutY="489.0" onKeyPressed="#AlphabeticP"  />
+        <TextField fx:id="TFQuantitaUp" layoutX="489.0" layoutY="444.0" onKeyPressed="#AlphabeticQ"  />
+        <TextField fx:id="TFupdateID" layoutX="490.0" layoutY="400.0" />
+        <Button fx:id="BUpdateP" layoutX="582.0" layoutY="547.0" mnemonicParsing="false" onAction="#UpdateProdotti" text="Modifica Prodotto" />
+        <Label fx:id="Q3" layoutX="419.0" layoutY="448.0" text="Quantità" textFill="WHITE" />
+        <Label fx:id="ID3" layoutX="410.0" layoutY="404.0" text="ID Prodotto" textFill="WHITE" />
+        <Label fx:id="P3" layoutX="424.0" layoutY="493.0" text="Prezzo" textFill="WHITE" />
+        <ListView fx:id="ListP" layoutX="41.0" layoutY="397.0" prefHeight="162.0" prefWidth="322.0" />
+        <Button fx:id="BaddP" layoutX="409.0" layoutY="547.0" mnemonicParsing="false" onAction="#AddProdotti" text="Aggiungi Prodotto" />
+
+        <Label fx:id="Lmod" layoutX="188.0" layoutY="327.0" prefHeight="25.0" prefWidth="462.0" text="Per modificare il prodotto compilare solo i campi in blu" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="Blista" layoutX="118.0" layoutY="572.0" mnemonicParsing="false" onAction="#ShowList" text="Visualizza Lista Prodotti" />
+    </children>
+</AnchorPane>

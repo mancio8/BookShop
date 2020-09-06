@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+             fx:controller="View.GestioneDipendentiControl">
+<children>
+    <ImageView fx:id="Screen" fitHeight="486.0" fitWidth="706.0" layoutX="-1.0" layoutY="-6.0">
+        <image>
+            <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+        </image>
+    </ImageView>
+    <Label fx:id="LGD" layoutX="249.0" layoutY="42.0" text="Gestione Dipendenti" textFill="WHITE">
+        <font>
+            <Font size="26.0" />
+        </font>
+    </Label>
+    <Label fx:id="N" layoutX="75.0" layoutY="128.0" text="Nome" textFill="WHITE" />
+    <Label fx:id="C" layoutX="75.0" layoutY="171.0" text="Cognome" textFill="WHITE" />
+    <Label fx:id="E" layoutX="75.0" layoutY="209.0" text="Email" textFill="WHITE" />
+    <Label fx:id="P" layoutX="75.0" layoutY="255.0" text="Password" textFill="WHITE" />
+    <TextField fx:id="TFPass" layoutX="144.0" layoutY="252.0" />
+    <TextField fx:id="TFEmailR" layoutX="522.0" layoutY="143.0" />
+    <TextField fx:id="TFEmail" layoutX="144.0" layoutY="206.0" />
+    <TextField fx:id="TFCognome" layoutX="145.0" layoutY="168.0" onKeyPressed="#AlphabeticC"/>
+    <TextField fx:id="TFNome" layoutX="144.0" layoutY="125.0" onKeyPressed="#Alphabetic" />
+    <Label fx:id="E2" layoutX="457.0" layoutY="146.0" text="Email" textFill="WHITE" />
+    <Button fx:id="AddDipendente" layoutX="154.0" layoutY="350.0" mnemonicParsing="false"  text="Aggiungi Dipendente" onAction="#AddDipendente"/>
+    <Button fx:id="RemoveDip" layoutX="537.0" layoutY="227.0" mnemonicParsing="false"  text="Elimina Dipendente" onAction="#RemoveDipendente"/>
+    <Separator fx:id="Sep" layoutX="371.0" layoutY="106.0" orientation="VERTICAL" prefHeight="332.0" prefWidth="4.0" />
+</children>
+</AnchorPane>
+

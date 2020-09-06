@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="View.ErroreloginControl">
+    <children>
+        <ImageView fx:id="Screen" fitHeight="92.0" fitWidth="308.0" layoutY="-4.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="Errore" layoutX="14.0" layoutY="21.0" prefHeight="42.0" prefWidth="254.0" text="Utente non Registrato" textFill="RED">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="Err" fitHeight="48.0" fitWidth="53.0" layoutX="242.0" layoutY="18.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/kisspng-check-mark-royalty-free-clip-art-error-cliparts-5a8b63e7b2c1f3.0229296415190845197322.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
+

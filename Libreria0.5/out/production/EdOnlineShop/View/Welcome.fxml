@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.WelcomeControl">
+    <children>
+        <ImageView fx:id="bluescreen" fitHeight="400.0" fitWidth="600.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="accedi" layoutX="274.0" layoutY="339.0" mnemonicParsing="false" onAction="#login" text="Accedi" />
+        <Label fx:id="welcome" layoutX="135.0" layoutY="56.0" prefHeight="95.0" prefWidth="394.0" text="Benvenuto" textAlignment="CENTER" textFill="#f2f2f5">
+            <font>
+                <Font size="64.0" />
+            </font>
+        </Label>
+        <TextField fx:id="labelmail" layoutX="226.0" layoutY="200.0" />
+        <Label fx:id="mail" layoutX="135.0" layoutY="204.0" text="Email:" textFill="WHITE" />
+        <Label fx:id="pass" layoutX="136.0" layoutY="266.0" text="Password:" textFill="#fcf9f9" />
+        <PasswordField fx:id="PassField" layoutX="226.0" layoutY="262.0" />
+        <ImageView fx:id="Unisannio" fitHeight="140.0" fitWidth="93.0" layoutX="10.0" layoutY="10.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/unisannio.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Iinstagram" fitHeight="47.0" fitWidth="50.0" layoutX="423.0" layoutY="343.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/Insta.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Iwhatsapp" fitHeight="47.0" fitWidth="50.0" layoutX="14.0" layoutY="342.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/wp.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="numb" layoutX="74.0" layoutY="358.0" text="3277771146" textFill="#0ff24b" />
+        <Label fx:id="intagram" layoutX="473.0" layoutY="359.0" text="\@EdOnlineShop" textFill="#f500d0" />
+    </children>
+</AnchorPane>

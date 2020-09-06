@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.HomepageDipControl">
+
+    <children>
+        <ImageView fx:id="screen" fitHeight="400.0" fitWidth="613.0" layoutX="-6.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="LDip" layoutX="501.0" layoutY="35.0" text="Dipendente" textFill="#fcfafa" />
+        <ListView fx:id="ListaRichieste" layoutX="41.0" layoutY="86.0" prefHeight="281.0" prefWidth="277.0" />
+        <Button fx:id="EliminaRic" layoutX="442.0" layoutY="310.0" mnemonicParsing="false" onAction="#DeleteRichiesta" text="Elimina Richiesta" />
+        <TextField fx:id="TextRic" layoutX="420.0" layoutY="276.0" />
+        <Label fx:id="IdRic" layoutX="442.0" layoutY="247.0" text="Inserisci Id Richiesta" textFill="#fcfafa" />
+        <Label fx:id="richiestaeff" layoutX="442.0" layoutY="360" text="" textFill="RED" />
+        <Button fx:id="VRic" layoutX="106.0" layoutY="38.0" mnemonicParsing="false" onAction="#VisRichiesta" text="Visualizza Richieste" />
+        <ImageView fx:id="ImageR" fitHeight="56.0" fitWidth="65.0" layoutX="25.0" layoutY="23.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/kisspng-archive-scalable-vector-graphics-directory-icon-folder-5a909b9a62f2a6.8876830615194264584053.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

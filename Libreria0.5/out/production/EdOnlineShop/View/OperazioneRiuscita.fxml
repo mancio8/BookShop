@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.OperazioneRiuscitaControl">
+    <children>
+        <ImageView fx:id="screen" fitHeight="112.0" fitWidth="440.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="labelok" layoutX="23.0" layoutY="14.0" prefHeight="69.0" prefWidth="395.0" text="Operazione Riuscita" textAlignment="CENTER" textFill="#09ed36">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="OK" fitHeight="69.0" fitWidth="70.0" layoutX="348.0" layoutY="14.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/5a223a2207b568.4679508015121925460316.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="View.CartControl" >
+    <children>
+        <ImageView fx:id="screenblue" fitHeight="520.0" fitWidth="714.0" layoutX="-8.0" layoutY="-8.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+            </image>
+        </ImageView>
+        <ListView fx:id="CartList" layoutX="20.0" layoutY="74.0" prefHeight="409.0" prefWidth="352.0"   />
+        <Label fx:id="LabeMail" layoutX="26.0" layoutY="22.0" text="Email" textFill="#fffdfd" />
+        <TextField fx:id="DeleteId" layoutX="473.0" layoutY="58.0" />
+        <Label fx:id="LCartidP" layoutX="493.0" layoutY="30.0" text="Inserisci id Prodotto " textFill="#fffdfd" />
+        <Button fx:id="DeletButton" layoutX="520.0" layoutY="93.0" mnemonicParsing="false" onAction="#DeleteP" text="Elimina" />
+        <Button fx:id="CreateRequestB" layoutX="453.0" layoutY="454.0" mnemonicParsing="false" onAction="#NewRequest" prefHeight="16.0" prefWidth="168.0" text="Crea richiesta acquisto" />
+        <Label fx:id="TotalL" layoutX="445.0" layoutY="346.0" prefHeight="32.0" prefWidth="102.0" text="TOTALE:" textFill="RED">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="PriceT" layoutX="558.0" layoutY="346.0" prefHeight="32.0" prefWidth="64.0" text="00.00" textFill="#fffdfd">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Tquantita" layoutX="641.0" layoutY="57.0" onKeyPressed="#Alphabetic" prefHeight="26.0" prefWidth="43.0" />
+        <Label fx:id="Lquantita" layoutX="639.0" layoutY="31.0" text="Quantità" textFill="WHITE" />
+        <Button fx:id="CarrelloB" layoutX="247.0" layoutY="18.0" mnemonicParsing="false" onAction="#ShowList" text="Visualizza il tuo Carrello" />
+        <TextField fx:id="IdRichiesta" layoutX="452.0" layoutY="417.0" />
+        <SplitMenuButton fx:id="Payement" layoutX="446.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Metodo Di Pagamento">
+            <items>
+                <MenuItem fx:id="Contanti" mnemonicParsing="false" onAction="#PayContanti" text="Contanti" />
+                <MenuItem fx:id="CartadiCredito" mnemonicParsing="false" onAction="#Paycreditcard" text="CartaCredito" />
+            </items>
+        </SplitMenuButton>
+        <Label fx:id="lrichiesta" layoutX="397.0" layoutY="394.0" text="Dai un nome alla tua richiesta di acquisto" textFill="#fffdfd" />
+        <Label fx:id="LPay" layoutX="436.0" layoutY="307.0" prefHeight="26.0" prefWidth="199.0" textFill="WHITE" />
+        <Label fx:id="LidEsistente" layoutX="442.0" layoutY="480.0" prefHeight="26.0" prefWidth="199.0" textFill="#f71111" />
+        <ImageView fx:id="Icart" fitHeight="38.0" fitWidth="49.0" layoutX="645.0" layoutY="454">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/5a385efc4d3fd6.3527956115136437723164.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Ieuro" fitHeight="38.0" fitWidth="56.0" layoutX="592.0" layoutY="209.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/5a35524abbf257.6366945115134439147698.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Ivisa" fitHeight="46.0" fitWidth="134.0" layoutX="452.0" layoutY="205.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/kisspng-mastercard-money-foothills-florist-business-visa-visa-mastercard-5b4d917e5dd4a1.2548981115318101743843.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

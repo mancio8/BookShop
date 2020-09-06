@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.AdminHomepageControl">
+    <children>
+        <ImageView fx:id="bluescreen" fitHeight="582.0" fitWidth="750.0" layoutY="-6.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+            </image>
+        </ImageView>
+        <ListView fx:id="ListClient" layoutX="38.0" layoutY="57.0" prefHeight="418.0" prefWidth="200.0" />
+        <ListView fx:id="ListDip" layoutX="285.0" layoutY="57.0"  prefHeight="418.0" prefWidth="200.0" />
+        <ListView fx:id="Listpro" layoutX="521.0" layoutY="57.0" prefHeight="418.0" prefWidth="200.0" />
+        <Button fx:id="BClient" layoutX="110.0" layoutY="497.0" mnemonicParsing="false" onAction="#ClientG" text="Gestione Cliente" />
+        <Button fx:id="BDip" layoutX="345.0" layoutY="497.0" mnemonicParsing="false" onAction="#DipG" text="Gestione Dipendenti" />
+        <Button fx:id="BPro" layoutX="596.0" layoutY="497.0" mnemonicParsing="false" onAction="#ProG" text="Gestione Prodotti" />
+        <Label fx:id="LAdmin" layoutX="596.0" layoutY="6.0" text="Admin" textFill="#07f83f" underline="true" onMouseMoved="#mail"/>
+        <Label fx:id="LClient" layoutX="184.0" layoutY="30.0" text="Clienti" textFill="#fcfafa" />
+        <Label fx:id="LDip" layoutX="425.0" layoutY="30.0" text="Dipendenti" textFill="#f5eeee" />
+        <Label fx:id="Lproduct" layoutX="669.0" layoutY="30.0" text="Prodotti" textFill="#fcf8f8" />
+        <Button fx:id="VisListC" layoutX="52.0" layoutY="26.0" mnemonicParsing="false" onAction="#VListaCliente" prefHeight="26.0" prefWidth="126.0" text="Visualizza Lista" />
+        <Button fx:id="VisLisP" layoutX="533.0" layoutY="24.0" mnemonicParsing="false" onAction="#VListaProdotti" prefHeight="26.0" prefWidth="126.0" text="Visualizza Lista" />
+        <Button fx:id="VisLisD" layoutX="292.0" layoutY="24.0" mnemonicParsing="false" onAction="#VListaDip" prefHeight="26.0" prefWidth="126.0" text="Visualizza Lista" />
+        <ImageView fx:id="Iclient" fitHeight="59.0" fitWidth="65.0" layoutX="42.0" layoutY="481.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/2182890.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Iprod" fitHeight="52.0" fitWidth="52.0" layoutX="529.0" layoutY="484.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/library-icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Idip" fitHeight="52.0" fitWidth="52.0" layoutX="281.0" layoutY="484.0">
+            <image>
+                <Image url="/home/vincenzo/Scrivania/businessman_tie-512.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
+
+

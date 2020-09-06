@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.HomepageClienteControl">
+        <children>
+                <ImageView fx:id="screenB" fitHeight="528.0" fitWidth="696.0" layoutY="-6.0">
+                        <image>
+                                <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
+                        </image>
+                </ImageView>
+                <Label fx:id="LClient" layoutX="570.0" layoutY="15.0" text="Cliente" textFill="#07f83f" underline="true" onMouseMoved="#mail" />
+                <ListView fx:id="ListaLibri" layoutX="14" layoutY="77.0" prefHeight="434.0" prefWidth="400" />
+                <TextField fx:id="TextPordotto" layoutX="482.0" layoutY="270.0" />
+                <Button fx:id="AddCarello" layoutX="495.0" layoutY="321.0" mnemonicParsing="false" onAction="#addCarrello" text="Inserisci nel carrello" />
+                <Label fx:id="Lidpro" layoutX="504.0" layoutY="246.0" text="Inserisci Id Prodotto" textFill="#fffdfd" />
+                <Button fx:id="ViewCarrello" layoutX="580.0" layoutY="458.0" mnemonicParsing="false" onAction="#apriCarrello" text="Vai al carrello" />
+                <Button fx:id="MostraLibri" layoutX="22.0" layoutY="31.0" mnemonicParsing="false" onAction="#VisualizzaLista" prefHeight="26.0" prefWidth="125.0" text="Visualizza Libri" />
+                <Button fx:id="MostraArticoli" layoutX="250.0" layoutY="31.0" mnemonicParsing="false" onAction="#VisualizzaListaArticoli" text="Visualizza Articoli" />
+
+                <Label fx:id="TFIDc" layoutX="504.0" layoutY="215"  onMouseClicked="#idC" textFill="white"/>
+                <Label fx:id="LCart" layoutX="504.0" layoutY="190.0" text="Id Carrello" textFill="#fffdfd" />
+                <Label fx:id="Lniente" layoutX="498.0" layoutY="369.0" textFill="RED">
+                        <font>
+                                <Font size="25.0" />
+                        </font>
+                </Label>
+                <ImageView fx:id="Ilib" fitHeight="50.0" fitWidth="46.0" layoutX="159.0" layoutY="19.0">
+                        <image>
+                                <Image url="/home/vincenzo/Scrivania/library-icon.png" />
+                        </image>
+                </ImageView>
+                <ImageView fx:id="Icart" fitHeight="50.0" fitWidth="54.0" layoutX="515.0" layoutY="446.0">
+                        <image>
+                                <Image url="/home/vincenzo/Scrivania/5a385efc4d3fd6.3527956115136437723164.png" />
+                        </image>
+                </ImageView>
+                <ImageView fx:id="IArtc" fitHeight="50.0" fitWidth="46.0" layoutX="385.0" layoutY="19.0">
+                        <image>
+                                <Image url="/home/vincenzo/Scrivania/kisspng-pencil-pencil-design-vector-5a9516f18cc482.9911632615197201775766.png" />
+                        </image>
+                </ImageView>
+                <TextField fx:id="Tquantita" layoutX="644.0" layoutY="269.0" prefHeight="26.0" prefWidth="37.0" onKeyPressed="#Alphabetic" />
+                <Label fx:id="Lquantita" layoutX="639.0" layoutY="246.0" text="Quantità" textFill="WHITE" />
+        </children>
+</AnchorPane>
