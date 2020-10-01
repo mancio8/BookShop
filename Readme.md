@@ -1,6 +1,6 @@
-###Elaborato di Progettazione del Software
+### Elaborato di Progettazione del Software
 
-#Documento di Software Design
+# Documento di Software Design
 
 ![Logo](https://www.giornalistitalia.it/wp-content/uploads/2015/09/Universit%c3%a0-del-Sannio.jpg)
 #
@@ -40,14 +40,14 @@ _____
 # <a name="UseCase"></a>Indicazioni casi d'uso
 ## <a name="1."></a>Raffinamento dei casi d'uso
 
-####Login Proprietario
+#### Login Proprietario
 ![Login_proprietario](https://res.cloudinary.com/dqh1pnrdx/image/upload/v1600437936/EdOnlineShop/Login_Proprietario_rkwpye.png)
 
-####Login Cliente
+#### Login Cliente
 ![Login_clienti](https://res.cloudinary.com/dqh1pnrdx/image/upload/v1600437462/EdOnlineShop/UseCase_Login_Cliente.png)
 
 
-####Login Dipendente
+#### Login Dipendente
 ![Login_dipendente](https://res.cloudinary.com/dqh1pnrdx/image/upload/v1600438000/EdOnlineShop/Login_Dipendente_oo25e5.png)
 
 ####Aggiungi nuovo prodotto
