@@ -13,7 +13,7 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="View.GestioneCcontrol">
+            fx:controller="Control.GestioneCcontrol">
     <children>
         <ImageView fx:id="screenblue" fitHeight="604.0" fitWidth="757.0">
             <image>

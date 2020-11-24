@@ -3,12 +3,15 @@ package Model;
 import java.util.Date;
 
 public class CartaFed {
-public CartaFed(String codice, Date datas , int punti, String e_cliente){
+public CartaFed(String codice, Date datas , int punti, Cliente e_cliente){
 	this.codice = codice;
 	this.datas = datas;
 	this.punti = punti;
 	this.e_cliente = e_cliente;
 }
+
+
+
 public String getCodice() {
 	return codice;
 }
@@ -21,10 +24,10 @@ public Date getData() {
 public void setData(Date datas) {
 	this.datas = datas;
 }
-public String getCliente() {
+public Cliente getCliente() {
 	return e_cliente;
 }
-public void setCliente(String e_cliente) {
+public void setCliente(Cliente e_cliente) {
 	this.e_cliente= e_cliente;
 }
 public int getPunti() {
@@ -36,5 +39,5 @@ public void setPunti(int punti) {
 private String codice;
 private Date datas;
 private int punti;
-private String e_cliente;
+private Cliente e_cliente;
 }

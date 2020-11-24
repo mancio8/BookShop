@@ -8,7 +8,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="View.WelcomeControl">
+            fx:controller="Control.WelcomeControl">
     <children>
         <ImageView fx:id="bluescreen" fitHeight="400.0" fitWidth="600.0">
             <image>
@@ -40,7 +40,7 @@
                 <Image url="/home/vincenzo/Scrivania/wp.png" />
             </image>
         </ImageView>
-        <Label fx:id="numb" layoutX="74.0" layoutY="358.0" text="3277771146" textFill="#0ff24b" />
+        <Label fx:id="numb" layoutX="74.0" layoutY="358.0" text="3400001146" textFill="#0ff24b" />
         <Label fx:id="intagram" layoutX="473.0" layoutY="359.0" text="\@EdOnlineShop" textFill="#f500d0" />
     </children>
 </AnchorPane>

@@ -3,7 +3,7 @@ package Model;
 import java.util.Date;
 
 public class RichiestaAcquisto {
-public RichiestaAcquisto(String idA , Date data , double prezzo, String tipoPagamento,  Dipendente d, String c) {
+public RichiestaAcquisto(String idA , Date data , double prezzo, String tipoPagamento,  Dipendente d, Cliente c) {
 	this.idA = idA;
 	this.prezzo = prezzo;
 	this.data = data;
@@ -13,10 +13,10 @@ public RichiestaAcquisto(String idA , Date data , double prezzo, String tipoPaga
 	this.c = c;
 }
 
-public String getC() {
+public Cliente getC() {
 	return c;
 }
-public void setC(String c) {
+public void setC(Cliente c) {
 	this.c = c;
 }
 public String getTipoPagamento() {
@@ -60,5 +60,5 @@ private String idA;
 private Date data;
 private double prezzo;
 private Dipendente d;
-private String c;
+private Cliente c;
 }

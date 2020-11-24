@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -11,33 +12,31 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="View.CartControl" >
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Control.CartControl" >
     <children>
-        <ImageView fx:id="screenblue" fitHeight="520.0" fitWidth="714.0" layoutX="-8.0" layoutY="-8.0">
+        <ImageView fx:id="screenblue" fitHeight="724.0" fitWidth="714.0" layoutX="-8.0" layoutY="-78.0">
             <image>
                 <Image url="/home/vincenzo/Scrivania/bluescreen.jpg" />
             </image>
         </ImageView>
-        <ListView fx:id="CartList" layoutX="20.0" layoutY="74.0" prefHeight="409.0" prefWidth="352.0"   />
+        <ListView fx:id="CartList" layoutX="22.0" layoutY="179.0" prefHeight="246.0" prefWidth="352.0" />
         <Label fx:id="LabeMail" layoutX="26.0" layoutY="22.0" text="Email" textFill="#fffdfd" />
         <TextField fx:id="DeleteId" layoutX="473.0" layoutY="58.0" />
         <Label fx:id="LCartidP" layoutX="493.0" layoutY="30.0" text="Inserisci id Prodotto " textFill="#fffdfd" />
-        <Button fx:id="DeletButton" layoutX="520.0" layoutY="93.0" mnemonicParsing="false" onAction="#DeleteP" text="Elimina" />
+        <Button fx:id="DeletButton" layoutX="520.0" layoutY="104.0" mnemonicParsing="false" onAction="#DeleteP" text="Elimina" />
         <Button fx:id="CreateRequestB" layoutX="453.0" layoutY="454.0" mnemonicParsing="false" onAction="#NewRequest" prefHeight="16.0" prefWidth="168.0" text="Crea richiesta acquisto" />
-        <Label fx:id="TotalL" layoutX="445.0" layoutY="346.0" prefHeight="32.0" prefWidth="102.0" text="TOTALE:" textFill="RED">
+        <Label fx:id="TotalL" layoutX="245.0" layoutY="461.0" prefHeight="32.0" prefWidth="102.0" text="TOTALE €:" textFill="RED">
             <font>
-                <Font name="System Bold" size="20.0" />
+                <Font name="System Bold" size="18.0" />
             </font>
         </Label>
-        <Label fx:id="PriceT" layoutX="558.0" layoutY="346.0" prefHeight="32.0" prefWidth="64.0" text="00.00" textFill="#fffdfd">
+        <Label fx:id="PriceT" layoutX="304.0" layoutY="493.0" prefHeight="32.0" prefWidth="92.0" text="00.00" textFill="#fffdfd">
             <font>
                 <Font size="20.0" />
             </font>
         </Label>
-        <TextField fx:id="Tquantita" layoutX="641.0" layoutY="57.0" onKeyPressed="#Alphabetic" prefHeight="26.0" prefWidth="43.0" />
-        <Label fx:id="Lquantita" layoutX="639.0" layoutY="31.0" text="Quantità" textFill="WHITE" />
-        <Button fx:id="CarrelloB" layoutX="247.0" layoutY="18.0" mnemonicParsing="false" onAction="#ShowList" text="Visualizza il tuo Carrello" />
+        <Button fx:id="CarrelloB" layoutX="178.0" layoutY="18.0" mnemonicParsing="false" onAction="#ShowList" text="Visualizza il tuo Carrello" />
         <TextField fx:id="IdRichiesta" layoutX="452.0" layoutY="417.0" />
         <SplitMenuButton fx:id="Payement" layoutX="446.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Metodo Di Pagamento">
             <items>
@@ -45,10 +44,10 @@
                 <MenuItem fx:id="CartadiCredito" mnemonicParsing="false" onAction="#Paycreditcard" text="CartaCredito" />
             </items>
         </SplitMenuButton>
-        <Label fx:id="lrichiesta" layoutX="397.0" layoutY="394.0" text="Dai un nome alla tua richiesta di acquisto" textFill="#fffdfd" />
-        <Label fx:id="LPay" layoutX="436.0" layoutY="307.0" prefHeight="26.0" prefWidth="199.0" textFill="WHITE" />
-        <Label fx:id="LidEsistente" layoutX="442.0" layoutY="480.0" prefHeight="26.0" prefWidth="199.0" textFill="#f71111" />
-        <ImageView fx:id="Icart" fitHeight="38.0" fitWidth="49.0" layoutX="645.0" layoutY="454">
+        <Label fx:id="lrichiesta" layoutX="417.0" layoutY="391.0" text="Dai un nome alla tua richiesta di acquisto" textFill="#fffdfd" />
+        <Label fx:id="LPay" layoutX="41.0" layoutY="496.0" prefHeight="26.0" prefWidth="199.0" textFill="WHITE" />
+        <Label fx:id="LidEsistente" layoutX="446.0" layoutY="496.0" prefHeight="26.0" prefWidth="199.0" textFill="#f71111" />
+        <ImageView fx:id="Icart" fitHeight="38.0" fitWidth="49.0" layoutX="645.0" layoutY="579">
             <image>
                 <Image url="/home/vincenzo/Scrivania/5a385efc4d3fd6.3527956115136437723164.png" />
             </image>
@@ -63,5 +62,27 @@
                 <Image url="/home/vincenzo/Scrivania/kisspng-mastercard-money-foothills-florist-business-visa-visa-mastercard-5b4d917e5dd4a1.2548981115318101743843.png" />
             </image>
         </ImageView>
+        <TextField fx:id="Tquantita" layoutX="641.0" layoutY="57.0" onKeyPressed="#Alphabetic" prefHeight="26.0" prefWidth="43.0" />
+        <Label fx:id="Lquantita" layoutX="639.0" layoutY="31.0" text="Quantità" textFill="WHITE" />
+        <Label fx:id="LEdshop" layoutX="82.0" layoutY="75.0" prefHeight="38.0" prefWidth="232.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="Lindirizzo" layoutX="91.0" layoutY="142.0" prefHeight="18.0" prefWidth="218.0" textFill="#f5eeee" />
+        <Label fx:id="Ldata" layoutX="41.0" layoutY="468.0" prefHeight="18.0" prefWidth="134.0" textFill="#f8f5f5" />
+        <Label fx:id="LSconto" layoutX="301.0" layoutY="536.0" prefHeight="32.0" prefWidth="92.0" text="00.00" textFill="#fffdfd">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="LSconto1" layoutX="301.0" layoutY="579.0" prefHeight="32.0" prefWidth="92.0" text="00.00" textFill="#fffdfd">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="ScontoL" layoutX="164.0" layoutY="544.0" text="Sconto €:" textFill="#f5f3f3" />
+        <Label fx:id="ScontoL1" layoutX="149.0" layoutY="586.0" text="Prezzo finale €:" textFill="#f5f3f3" />
+        <Separator layoutX="387.0" layoutY="20.0" orientation="VERTICAL" prefHeight="606.0" prefWidth="6.0" />
     </children>
 </AnchorPane>

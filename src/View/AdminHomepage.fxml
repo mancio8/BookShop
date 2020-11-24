@@ -7,7 +7,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="View.AdminHomepageControl">
+            fx:controller="Control.AdminHomepageControl">
     <children>
         <ImageView fx:id="bluescreen" fitHeight="582.0" fitWidth="750.0" layoutY="-6.0">
             <image>

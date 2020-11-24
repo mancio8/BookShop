@@ -1,22 +1,25 @@
 package Model;
 
+import java.util.Date;
+
 public class Pagamento {
-	public Pagamento(String idP, String tipo , double sconto, Carrello carrello) {
-		this.idP = idP;
-		this.tipo = tipo;
+	public Pagamento(Cliente email, Date data , double sconto, double prezzo_totale) {
+		this.email = email;
+		this.data = data;
 		this.sconto = sconto;
+		this.prezzo_totale = prezzo_totale;
 	}
-    public String getIdP() {
-		return idP;
+    public Cliente getEmail() {
+		return email;
 	}
-	public void setIdP(String idP) {
-		this.idP = idP;
+	public void setEmail(Cliente email) {
+		this.email = email;
 	}
-    public String getTipo() {
-		return tipo;
+	public Date getData() {
+		return data;
 	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	public void setData(Date data) {
+		this.data = data;
 	}
 	public double getSconto() {
 		return sconto;
@@ -24,14 +27,16 @@ public class Pagamento {
 	public void setSconto(double sconto) {
 		this.sconto = sconto;
 	}
-    public Carrello getCarrello() {
-	return carrello;
-    }
-    public void setCarrello(Carrello carrello) {
-	this.carrello = carrello;
-    }
-private Carrello carrello;
-private String idP;
-private String tipo;
+	public double getPrezzo_T() {
+		return prezzo_totale;
+	}
+	public void setPrezzo_t(double prezzo_totale) {
+		this.prezzo_totale = prezzo_totale;
+	}
+
+
+private Cliente email;
+private Date data;
 private double sconto;
+private double prezzo_totale;
 }

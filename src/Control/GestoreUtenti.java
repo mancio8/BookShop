@@ -1,5 +1,6 @@
 package Control;
 
+import DAO.GestoreDB;
 import Model.Cliente;
 import Model.Dipendente;
 import Model.Proprietario;
